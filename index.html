@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="es" style="background:#17100f">
+<head>
+<meta charset="UTF-8"/>
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Propuesta Exclusiva para Cargill — Activación Bucanero & Kimby | MFD Marketing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<style>
+:root{
+  --r:#C0141A;--rv:#D91E25;--ro:#8B0000;--vino:#6B0F1A;
+  --w:#fff;--cream:#F8F4F2;--gc:#EDE8E5;--gm:#DDD5D1;--gt:#5C5258;
+  --dark:#18100E;--dark2:#241518;--dark3:#17100f;
+  --sh:rgba(192,20,26,.14);--shf:rgba(107,15,26,.26);
+  --gh:linear-gradient(135deg,#18100E 0%,#6B0F1A 52%,#8B0000 100%);
+  --gr:linear-gradient(135deg,#D91E25 0%,#8B0000 100%);
+  --gc-soft:linear-gradient(180deg,#F8F4F2 0%,#fff 100%);
+  --ease:.3s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--dark3)}
+body{font-family:'Barlow',sans-serif;background:var(--dark3);color:var(--w);overflow-x:hidden;line-height:1.55}
+
+.progress-bar{position:fixed;top:0;left:0;height:3px;background:var(--gr);z-index:9999;width:0%;transition:width .1s linear}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;width:100%;z-index:1000;padding:16px 5vw;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(24,16,14,0.92);backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(192,20,26,0.18);
+}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:3px;color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px}
+.nav-logo .dot{width:10px;height:10px;background:var(--rv);border-radius:50%;box-shadow:0 0 12px var(--rv)}
+.nav-badge{
+  font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;
+  color:rgba(255,255,255,0.6);text-transform:uppercase;
+  border:1px solid rgba(255,255,255,0.14);padding:7px 16px;border-radius:40px;
+}
+.nav-badge em{color:var(--rv);font-style:normal;font-weight:800}
+
+/* === COMMON SECTION === */
+section{padding:110px 5vw;position:relative}
+.container{max-width:1280px;margin:0 auto;position:relative;z-index:2}
+.section-tag{
+  display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;
+  letter-spacing:4px;color:var(--rv);text-transform:uppercase;margin-bottom:14px;
+}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,6vw,82px);line-height:.95;letter-spacing:-1px;margin-bottom:18px;color:#fff}
+.section-title em{color:var(--rv);font-style:normal}
+.divider{width:80px;height:4px;background:var(--gr);margin:22px 0 28px;border-radius:2px}
+.section-lead{font-size:1.1rem;line-height:1.7;color:rgba(255,255,255,.68);max-width:780px;font-weight:300}
+
+/* DARK / LIGHT MODIFIERS */
+.bg-dark{background:var(--dark3);color:#fff}
+.bg-light{background:var(--cream);color:var(--dark)}
+.bg-white{background:#fff;color:var(--dark)}
+.bg-gradient{background:var(--gh);color:#fff;overflow:hidden}
+.bg-gradient::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 20% 30%,rgba(217,30,37,.3),transparent 55%),
+             radial-gradient(circle at 80% 70%,rgba(139,0,0,.4),transparent 55%);
+  z-index:0;
+}
+.bg-light .section-title,.bg-white .section-title{color:var(--dark)}
+.bg-light .section-lead,.bg-white .section-lead{color:var(--gt)}
+
+/* === HERO === */
+#hero{
+  position:relative;min-height:100vh;overflow:hidden;
+  background:var(--gh);display:flex;align-items:center;
+  padding:140px 5vw 80px;
+}
+#hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 22% 32%,rgba(217,30,37,.34),transparent 56%),
+             radial-gradient(circle at 78% 68%,rgba(139,0,0,.45),transparent 56%);
+  z-index:1;
+}
+#hero .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.12;z-index:0}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.55;z-index:1}
+.hero-orb-1{width:540px;height:540px;background:var(--rv);top:-180px;right:-120px;animation:float 14s ease-in-out infinite}
+.hero-orb-2{width:440px;height:440px;background:var(--vino);bottom:-160px;left:-100px;animation:float 16s ease-in-out infinite reverse}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,-40px)}}
+.hero-inner{position:relative;z-index:3;max-width:1180px;margin:0 auto;width:100%}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;
+  letter-spacing:4px;color:#fff;text-transform:uppercase;
+  background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.24);
+  padding:9px 22px;border-radius:40px;margin-bottom:28px;backdrop-filter:blur(10px);
+}
+.hero-eyebrow .live-dot{width:8px;height:8px;border-radius:50%;background:#7CE082;box-shadow:0 0 0 4px rgba(124,224,130,.18);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(124,224,130,.18)}50%{box-shadow:0 0 0 9px rgba(124,224,130,.06)}}
+.hero-pre{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;letter-spacing:8px;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:12px;font-weight:500}
+.hero-title{
+  font-family:'Bebas Neue',sans-serif;font-size:clamp(62px,11vw,154px);line-height:.86;
+  margin-bottom:26px;letter-spacing:-2px;
+}
+.hero-title em{color:#fff;font-style:normal;display:block;text-shadow:0 4px 30px rgba(0,0,0,.4)}
+.hero-title b{display:block;background:linear-gradient(135deg,#FFD4D6 0%,#fff 60%,#FFB3B7 100%);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:400}
+.hero-desc{font-size:1.22rem;line-height:1.6;color:rgba(255,255,255,.86);max-width:840px;margin-bottom:36px;font-weight:300}
+.hero-desc strong{color:#fff;font-weight:600}
+.hero-pills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:46px}
+.pill{
+  font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;
+  text-transform:uppercase;padding:9px 18px;border-radius:30px;
+  background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.24);color:#fff;
+}
+.pill.red{background:#fff;color:var(--ro);border-color:#fff;font-weight:700}
+.hero-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;border-top:1px solid rgba(255,255,255,.18);padding-top:32px}
+.hero-stat .num{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5vw,66px);line-height:1;color:#fff;margin-bottom:6px}
+.hero-stat .lbl{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.65)}
+.scroll-cue{
+  position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
+  font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:4px;
+  color:rgba(255,255,255,.55);text-transform:uppercase;z-index:3;
+}
+.scroll-cue::after{content:'';display:block;width:1px;height:34px;background:rgba(255,255,255,.4);margin:10px auto 0;animation:scrollDown 2s infinite}
+@keyframes scrollDown{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* === POR QUÉ MFD PARA CARGILL (LIGHT SECTION) === */
+#por-que{background:var(--gc-soft)}
+.pq-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center;margin-top:50px}
+.pq-text p.lead{font-size:1.1rem;line-height:1.75;color:var(--gt);margin-bottom:20px;font-weight:300}
+.pq-text p.lead strong{color:var(--dark);font-weight:700}
+.pq-context{background:#fff;padding:30px 32px;border-radius:18px;border-left:5px solid var(--r);box-shadow:0 14px 40px rgba(0,0,0,.06);margin-top:24px}
+.pq-context .ct-tag{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;color:var(--r);text-transform:uppercase;margin-bottom:10px;display:block}
+.pq-context p{font-size:.98rem;color:var(--dark);font-style:italic;line-height:1.6}
+.pq-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pq-card{background:#fff;border-radius:16px;padding:26px 22px;border:1px solid var(--gc);transition:transform var(--ease),box-shadow var(--ease),border-color var(--ease)}
+.pq-card:hover{transform:translateY(-6px);border-color:var(--r);box-shadow:0 22px 40px rgba(192,20,26,.12)}
+.pq-icon{width:48px;height:48px;border-radius:12px;background:rgba(192,20,26,.08);display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--r)}
+.pq-icon svg{width:24px;height:24px}
+.pq-card-title{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:1.5px;color:var(--dark);margin-bottom:8px;line-height:1.1}
+.pq-card-text{font-size:.92rem;color:var(--gt);line-height:1.5;font-weight:300}
+
+/* === PORTAFOLIO BUCANERO + KIMBY (DARK) === */
+#portafolio{background:linear-gradient(180deg,#17100f 0%,#1a1010 100%)}
+.camp-intro{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:end;margin-bottom:56px}
+.camp-intro .section-lead{margin-bottom:0}
+.camp-intro-stats{display:flex;gap:30px;justify-content:flex-end}
+.cis{text-align:right}
+.cis-num{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:var(--rv);line-height:1}
+.cis-lbl{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2.5px;color:rgba(255,255,255,.55);text-transform:uppercase;margin-top:4px;display:block}
+.camp-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.camp-card{
+  position:relative;background:linear-gradient(160deg,rgba(36,21,24,.95) 0%,rgba(24,16,14,.95) 100%);
+  border:1px solid rgba(192,20,26,.22);border-radius:24px;overflow:hidden;
+  transition:transform var(--ease),border-color var(--ease),box-shadow var(--ease);
+}
+.camp-card:hover{transform:translateY(-8px);border-color:var(--rv);box-shadow:0 28px 60px var(--shf)}
+.camp-card::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:var(--gr)}
+.camp-header{padding:30px 34px 24px;border-bottom:1px solid rgba(255,255,255,.08)}
+.camp-row1{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:10px}
+.camp-badge{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;color:var(--rv);background:rgba(217,30,37,.12);border:1px solid rgba(217,30,37,.35);padding:5px 12px;border-radius:30px;text-transform:uppercase}
+.camp-status{display:flex;align-items:center;gap:8px;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:2px;color:#7CE082;text-transform:uppercase;font-weight:600}
+.status-dot{width:9px;height:9px;background:#7CE082;border-radius:50%;box-shadow:0 0 0 4px rgba(124,224,130,.18);animation:pulse 2s infinite}
+.camp-name{font-family:'Bebas Neue',sans-serif;font-size:3.4rem;letter-spacing:2px;color:#fff;line-height:1;margin-top:6px}
+.camp-tagline{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:2.5px;color:rgba(255,255,255,.55);text-transform:uppercase;margin-top:4px}
+.camp-body{padding:28px 34px 34px}
+.camp-row{margin-bottom:20px}
+.camp-label{display:block;font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,.55);text-transform:uppercase;margin-bottom:8px}
+.camp-value{font-size:.95rem;line-height:1.55;color:rgba(255,255,255,.82);font-weight:300}
+.camp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.camp-tag{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:1.5px;color:rgba(255,255,255,.7);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:4px 10px;border-radius:20px;text-transform:uppercase;font-weight:500}
+.camp-kpi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.08)}
+.camp-kpi{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 14px;text-align:center;transition:background var(--ease),border-color var(--ease)}
+.camp-kpi:hover{background:rgba(217,30,37,.10);border-color:rgba(217,30,37,.35)}
+.camp-kpi-val{display:block;font-family:'Bebas Neue',sans-serif;font-size:2.1rem;color:var(--rv);line-height:1;margin-bottom:4px}
+.camp-kpi-lbl{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:2px;color:rgba(255,255,255,.65);text-transform:uppercase}
+
+/* === 100% COBERTURA (GRADIENT RED) === */
+#cobertura{background:var(--gh);position:relative;overflow:hidden;padding:130px 5vw}
+#cobertura::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 75% 25%,rgba(217,30,37,.32),transparent 50%),
+             radial-gradient(circle at 25% 75%,rgba(139,0,0,.38),transparent 50%);
+}
+.cov-headline{text-align:center;margin-bottom:60px}
+.cov-headline .section-tag{color:#fff;opacity:.9}
+.cov-headline .section-title{font-size:clamp(56px,9vw,118px);margin-bottom:0;color:#fff}
+.cov-big{font-family:'Bebas Neue',sans-serif;font-size:clamp(140px,24vw,340px);line-height:.82;background:linear-gradient(135deg,#fff 0%,#FFD4D6 50%,#fff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-8px;margin:14px 0;filter:drop-shadow(0 6px 30px rgba(0,0,0,.35))}
+.cov-big sup{font-size:.32em;color:#fff;-webkit-text-fill-color:#fff;vertical-align:top;margin-left:8px}
+.cov-headline p{color:rgba(255,255,255,.9);margin:0 auto;text-align:center;max-width:760px;font-size:1.15rem;font-weight:300;line-height:1.65}
+.cov-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:60px}
+.cov-card{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:30px 22px;text-align:center;backdrop-filter:blur(14px);transition:all var(--ease)}
+.cov-card:hover{transform:translateY(-6px);background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.4)}
+.cov-num{font-family:'Bebas Neue',sans-serif;font-size:3.6rem;color:#fff;line-height:1;margin-bottom:6px;letter-spacing:-1px}
+.cov-lbl{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:2.5px;color:rgba(255,255,255,.92);text-transform:uppercase;font-weight:600;margin-bottom:6px}
+.cov-sub{font-size:.83rem;color:rgba(255,255,255,.6);font-weight:300;line-height:1.4}
+
+/* === PROCESOS DE EJECUCIÓN (LIGHT) === */
+#procesos{background:var(--cream)}
+.exec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.exec-card{background:#fff;border:1px solid var(--gc);border-radius:18px;padding:32px 28px;transition:all var(--ease);position:relative;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.04)}
+.exec-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--gr);transform:scaleX(0);transform-origin:left;transition:transform var(--ease)}
+.exec-card:hover{transform:translateY(-8px);border-color:var(--r);box-shadow:0 22px 50px rgba(192,20,26,.14)}
+.exec-card:hover::before{transform:scaleX(1)}
+.exec-icon{width:56px;height:56px;background:rgba(192,20,26,.08);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--r);transition:background var(--ease),color var(--ease)}
+.exec-icon svg{width:28px;height:28px}
+.exec-card:hover .exec-icon{background:var(--r);color:#fff}
+.exec-title{font-family:'Bebas Neue',sans-serif;font-size:1.55rem;color:var(--dark);letter-spacing:1.5px;margin-bottom:12px}
+.exec-desc{font-size:.95rem;line-height:1.55;color:var(--gt);margin-bottom:18px;font-weight:300}
+.exec-list{list-style:none;padding:0;margin:0}
+.exec-item{position:relative;padding:6px 0 6px 22px;font-size:.88rem;color:var(--dark);font-weight:400}
+.exec-item::before{content:'▸';position:absolute;left:0;color:var(--r);font-weight:700}
+
+/* === GALERÍA COVERFLOW (DARK) === */
+#galeria{background:#17100f;padding-top:130px;padding-bottom:130px}
+.gal-header{text-align:center;max-width:780px;margin:0 auto 60px}
+.gal-header .divider{margin:22px auto 28px}
+.gal-header .section-lead{margin-left:auto;margin-right:auto;color:rgba(255,255,255,.66)}
+
+.gal-stage{
+  position:relative;max-width:1280px;margin:0 auto;
+  height:clamp(380px,55vw,560px);
+  display:flex;align-items:center;justify-content:center;
+  perspective:1600px;
+  overflow:hidden;
+}
+.gal-slide{
+  position:absolute;
+  width:min(62%,720px);aspect-ratio:16/10;
+  border-radius:18px;overflow:hidden;
+  box-shadow:0 30px 60px rgba(0,0,0,.55);
+  transition:transform .85s cubic-bezier(.4,0,.2,1),opacity .85s ease,filter .85s ease;
+  cursor:pointer;
+  background:#0d0807;
+}
+.gal-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.gal-slide.active{transform:translateX(0) scale(1) rotateY(0);opacity:1;z-index:5;filter:brightness(1)}
+.gal-slide.prev{transform:translateX(-58%) scale(.72) rotateY(12deg);opacity:.5;z-index:3;filter:brightness(.55)}
+.gal-slide.next{transform:translateX(58%) scale(.72) rotateY(-12deg);opacity:.5;z-index:3;filter:brightness(.55)}
+.gal-slide.far-prev{transform:translateX(-95%) scale(.5) rotateY(20deg);opacity:0;z-index:1;pointer-events:none}
+.gal-slide.far-next{transform:translateX(95%) scale(.5) rotateY(-20deg);opacity:0;z-index:1;pointer-events:none}
+.gal-slide.hidden{opacity:0;z-index:0;pointer-events:none;transform:scale(.4)}
+.gal-slide-overlay{position:absolute;left:0;right:0;bottom:0;padding:60px 28px 22px;background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(0,0,0,.35) 60%,transparent 100%);pointer-events:none;opacity:0;transition:opacity .5s ease}
+.gal-slide.active .gal-slide-overlay{opacity:1}
+.gal-slide-label{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;letter-spacing:3px;color:#fff;text-transform:uppercase}
+.gal-slide-label em{color:var(--rv);font-style:normal}
+
+.gal-controls{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:36px;flex-wrap:wrap}
+.gal-btn{
+  background:rgba(255,255,255,.06);color:#fff;border:1px solid rgba(255,255,255,.14);
+  width:48px;height:48px;border-radius:50%;cursor:pointer;
+  font-size:16px;transition:all var(--ease);
+  display:flex;align-items:center;justify-content:center;
+}
+.gal-btn:hover{background:var(--r);border-color:var(--r);transform:scale(1.08)}
+.gal-counter{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:3px;color:#fff;min-width:80px;text-align:center}
+.gal-counter .total{color:rgba(255,255,255,.5)}
+.gal-dots{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;max-width:440px;margin-top:14px}
+.gal-dot{width:7px;height:7px;background:rgba(255,255,255,.25);border-radius:50%;cursor:pointer;transition:all var(--ease);border:none;padding:0}
+.gal-dot.active{background:var(--rv);transform:scale(1.6);box-shadow:0 0 10px var(--rv)}
+
+.gal-loading{display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:rgba(255,255,255,.5);font-family:'Barlow Condensed',sans-serif;letter-spacing:3px;font-size:14px;text-transform:uppercase}
+.gal-loading::before{content:'';display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.2);border-top-color:var(--rv);border-radius:50%;animation:spin 1s linear infinite;margin-right:12px;vertical-align:middle}
+@keyframes spin{to{transform:rotate(360deg)}}
+.gal-fallback{display:none;width:100%;height:clamp(420px,60vw,640px);border:none;border-radius:18px;max-width:1180px;margin:0 auto}
+.gal-fallback.active{display:block}
+
+/* === INDICADORES BI (WHITE) === */
+#indicadores{background:#fff}
+.kpi-intro{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center;margin-bottom:50px}
+.kpi-intro .quote-card{background:var(--cream);padding:32px 34px;border-radius:18px;border-left:5px solid var(--r)}
+.kpi-intro .quote-card .qc-tag{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:3px;color:var(--r);font-weight:700;text-transform:uppercase;margin-bottom:10px;display:block}
+.kpi-intro .quote-card p{font-size:1rem;line-height:1.6;color:var(--dark);font-weight:400;font-style:italic}
+.kpi-intro .quote-card .qc-author{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:2px;color:var(--gt);margin-top:14px;display:block;text-transform:uppercase;font-style:normal}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.kpi-card{background:#fff;border:1px solid var(--gc);border-radius:16px;padding:28px 22px;text-align:center;transition:all var(--ease);position:relative;overflow:hidden}
+.kpi-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--gr);transform:scaleY(0);transform-origin:top;transition:transform var(--ease)}
+.kpi-card:hover{border-color:var(--r);transform:translateY(-4px);box-shadow:0 16px 36px rgba(192,20,26,.12)}
+.kpi-card:hover::before{transform:scaleY(1)}
+.kpi-num{font-family:'Bebas Neue',sans-serif;font-size:3.2rem;color:var(--r);line-height:1;letter-spacing:-1px;margin-bottom:6px}
+.kpi-lbl{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2.5px;color:var(--dark);text-transform:uppercase;font-weight:700;margin-bottom:6px}
+.kpi-sub{font-size:.82rem;color:var(--gt);font-weight:300;line-height:1.4}
+.kpi-divider{margin:48px 0 32px;display:flex;align-items:center;gap:20px}
+.kpi-divider::before,.kpi-divider::after{content:'';flex:1;height:1px;background:var(--gc)}
+.kpi-divider span{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:4px;color:var(--gt);text-transform:uppercase;font-weight:700}
+
+/* === PROPUESTA CTA (RED GRADIENT) === */
+#propuesta{background:var(--gh);position:relative;overflow:hidden}
+#propuesta::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 30% 40%,rgba(217,30,37,.32),transparent 55%),
+             radial-gradient(circle at 70% 60%,rgba(139,0,0,.4),transparent 55%);
+}
+.prop-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+.prop-text .section-tag{color:#fff;opacity:.85}
+.prop-text .section-title{color:#fff}
+.prop-text p{color:rgba(255,255,255,.88);font-size:1.1rem;line-height:1.7;margin-bottom:24px;font-weight:300}
+.prop-text p strong{color:#fff;font-weight:700}
+.prop-checks{list-style:none;padding:0;margin:20px 0 28px}
+.prop-checks li{display:flex;align-items:flex-start;gap:14px;color:#fff;padding:8px 0;font-size:1rem;font-weight:400}
+.prop-checks li svg{flex-shrink:0;width:22px;height:22px;color:#fff;margin-top:2px;background:rgba(255,255,255,.18);padding:4px;border-radius:50%}
+.prop-card{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.24);border-radius:24px;padding:42px 38px;backdrop-filter:blur(16px)}
+.prop-card-tag{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:3px;color:#fff;text-transform:uppercase;font-weight:700;opacity:.7;margin-bottom:10px;display:block}
+.prop-card-title{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;letter-spacing:1.5px;color:#fff;line-height:1;margin-bottom:24px}
+.prop-card-row{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.prop-card-row:last-of-type{border-bottom:none}
+.prop-card-row .pc-lbl{font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:2px;color:rgba(255,255,255,.75);text-transform:uppercase;font-weight:600}
+.prop-card-row .pc-val{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;color:#fff;letter-spacing:1px}
+.prop-cta{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--ro);padding:16px 32px;border-radius:50px;font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:3px;font-weight:800;text-transform:uppercase;text-decoration:none;margin-top:22px;transition:transform var(--ease),box-shadow var(--ease)}
+.prop-cta:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(0,0,0,.3)}
+
+/* === FOOTER === */
+footer{background:#0d0707;padding:60px 5vw 36px;text-align:center;border-top:1px solid rgba(192,20,26,.2)}
+.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:4px;color:#fff;margin-bottom:8px}
+.footer-brand span{color:var(--rv)}
+.footer-tag{font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:3px;color:rgba(255,255,255,.5);text-transform:uppercase;margin-bottom:18px}
+.footer-text{font-size:.84rem;color:rgba(255,255,255,.4);margin-top:6px;font-weight:300}
+
+/* === RESPONSIVE === */
+@media(max-width:980px){
+  .camp-grid,.cov-grid,.exec-grid,.pq-cards,.kpi-grid,.prop-grid,.pq-grid,.camp-intro,.kpi-intro{grid-template-columns:1fr 1fr}
+  .kpi-grid{grid-template-columns:repeat(3,1fr)}
+  .cov-grid{grid-template-columns:repeat(2,1fr)}
+  .exec-grid{grid-template-columns:1fr 1fr}
+  .pq-grid,.camp-intro,.kpi-intro,.prop-grid{grid-template-columns:1fr;gap:30px}
+  .camp-intro-stats{justify-content:flex-start}
+  .cis{text-align:left}
+  .hero-meta{grid-template-columns:1fr 1fr;gap:20px}
+  section{padding:80px 5vw}
+}
+@media(max-width:600px){
+  .camp-grid,.cov-grid,.exec-grid,.pq-cards,.kpi-grid,.hero-meta{grid-template-columns:1fr}
+  nav{padding:14px 4vw}
+  .nav-logo{font-size:1.15rem}
+  .nav-badge{font-size:9px;padding:5px 10px}
+  .gal-slide{width:80%}
+  .gal-slide.prev,.gal-slide.next{transform:translateX(-65%) scale(.6) rotateY(12deg)}
+  .gal-slide.next{transform:translateX(65%) scale(.6) rotateY(-12deg)}
+  .prop-card{padding:30px 24px}
+}
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="pbar"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo"><span class="dot"></span>MFD Marketing</a>
+  <span class="nav-badge">Propuesta Exclusiva · <em>Cargill Food Latinoamérica</em></span>
+</nav>
+
+<!-- ╔══════════════ HERO ══════════════╗ -->
+<section id="hero">
+  <img class="hero-bg" src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1800&h=950" alt="" loading="eager">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow"><span class="live-dot"></span>Propuesta Comercial 2026 · Estrictamente Confidencial</div>
+    <p class="hero-pre">Para Cargill Food Latinoamérica</p>
+    <h1 class="hero-title">
+      <em>Bucanero</em>
+      <b>&amp; Kimby</b>
+    </h1>
+    <p class="hero-desc">Una operación de campo de <strong>cobertura nacional al 100%</strong> diseñada para impulsar Bucanero y Kimby en cada punto de contacto con el consumidor. Ejecución impecable, equipo propio capacitado y reportería en tiempo real que muestra resultados medibles desde el primer día.</p>
+    <div class="hero-pills">
+      <span class="pill red">Cobertura 100% PDV</span>
+      <span class="pill">Bucanero Premium</span>
+      <span class="pill">Kimby Tradicional</span>
+
+      <span class="pill">15 Años de Experiencia</span>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-stat"><div class="num">100%</div><div class="lbl">Cobertura PDV Objetivo</div></div>
+      <div class="hero-stat"><div class="num">324+</div><div class="lbl">Puntos de Venta Activados</div></div>
+      <div class="hero-stat"><div class="num">100%</div><div class="lbl">Impulsadores Propios</div></div>
+      <div class="hero-stat"><div class="num">100%</div><div class="lbl">Ejecución sin Brechas</div></div>
+    </div>
+  </div>
+  <div class="scroll-cue">Continuar</div>
+</section>
+
+<!-- ╔══════════════ POR QUÉ MFD PARA CARGILL ══════════════╗ -->
+<section id="por-que" class="bg-light">
+  <div class="container">
+    <span class="section-tag">¿Por Qué MFD para Cargill?</span>
+    <h2 class="section-title">El partner que entiende<br>tu <em>portafolio</em></h2>
+    <div class="divider"></div>
+
+    <div class="pq-grid">
+      <div class="pq-text">
+        <p class="lead">Cargill llegó a Colombia con la adquisición de <strong>Pollos El Bucanero (2017)</strong> y <strong>Campollo (2018)</strong>, sumándolas a un portafolio regional donde <strong>Kimby</strong> ya es referente en Centroamérica. Su estrategia exige dos ejecuciones distintas pero complementarias: <strong>posicionamiento premium</strong> para Bucanero y <strong>profundidad en canal tradicional</strong> para Kimby.</p>
+        <p class="lead">Ahí es donde entramos nosotros. <strong>MFD lleva 15 años especializándose exactamente en esa dualidad</strong>: impulso en tiendas de barrio, salsamentarias y plazas para marcas masivas; y activaciones de alto impacto para marcas premium en el canal de mayor rotación.</p>
+        <div class="pq-context">
+          <span class="ct-tag">Contexto Estratégico</span>
+          <p>"Bucanero high-end y Kimby como propuesta económica con fortaleza en canal tradicional, tiendas y salsamentarias, con vistas a expandir su presencia en nuevos puntos de venta."</p>
+          <span class="qc-author" style="font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2px;color:var(--gt);margin-top:14px;display:block;text-transform:uppercase">— Gilberto Guzmán · Director Ejecutivo Cargill Colombia</span>
+        </div>
+      </div>
+
+      <div class="pq-cards">
+        <div class="pq-card">
+          <div class="pq-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+          </div>
+          <h3 class="pq-card-title">Maestros del Canal Tradicional</h3>
+          <p class="pq-card-text">Especialización quirúrgica en tiendas, salsamentarias y plazas de mercado — el ADN de Kimby en Colombia.</p>
+        </div>
+        <div class="pq-card">
+          <div class="pq-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="pq-card-title">Presencia en Múltiples Canales</h3>
+          <p class="pq-card-text">Capacidad de activación tanto en canal tradicional (tiendas, salsamentarias, plazas) como en puntos de alto tráfico — cubriendo toda la ecuación de distribución.</p>
+        </div>
+        <div class="pq-card">
+          <div class="pq-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="pq-card-title">Equipo Propio, No Tercerizado</h3>
+          <p class="pq-card-text">Personal directamente contratado, capacitado en protocolos de degustación y atención al shopper con dotación propia.</p>
+        </div>
+        <div class="pq-card">
+          <div class="pq-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <h3 class="pq-card-title">Reportería en Tiempo Real</h3>
+          <p class="pq-card-text">Dashboards diarios y semanales con métricas de cobertura, activación y movimiento de producto — visibilidad operativa completa en campo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════ PORTAFOLIO BUCANERO + KIMBY ══════════════╗ -->
+<section id="portafolio" class="bg-dark">
+  <div class="container">
+    <span class="section-tag">Las Dos Carteras</span>
+    <h2 class="section-title">Una operación,<br>dos <em>estrategias</em></h2>
+    <div class="divider"></div>
+
+    <div class="camp-intro">
+      <p class="section-lead">Cada marca dentro del portafolio Cargill Food merece una ejecución alineada a su posicionamiento. Diseñamos planos operativos diferenciados para Bucanero (premium) y Kimby (masivo) con métricas, ruteo y mecánicas específicas para cada uno.</p>
+      <div class="camp-intro-stats">
+        <div class="cis"><div class="cis-num">2</div><span class="cis-lbl">Marcas Activas</span></div>
+        <div class="cis"><div class="cis-num">12</div><span class="cis-lbl">SKUs Promedio</span></div>
+        <div class="cis"><div class="cis-num">32</div><span class="cis-lbl">Ciudades</span></div>
+      </div>
+    </div>
+
+    <div class="camp-grid">
+      <!-- BUCANERO -->
+      <div class="camp-card" data-campaign="bucanero">
+        <div class="camp-header">
+          <div class="camp-row1">
+            <span class="camp-badge">Premium · Alto Impacto</span>
+            <div class="camp-status"><span class="status-dot"></span><span>En ejecución</span></div>
+          </div>
+          <h3 class="camp-name">BUCANERO</h3>
+          <span class="camp-tagline">Sabores del Mundo · Cargill Colombia</span>
+        </div>
+        <div class="camp-body">
+          <div class="camp-row">
+            <span class="camp-label">Objetivo Estratégico</span>
+            <p class="camp-value">Consolidar a Bucanero como la propuesta premium de Cargill en Colombia, con ejecuciones de alto impacto en puntos estratégicos, degustaciones experienciales y activaciones que construyen preferencia de marca.</p>
+          </div>
+          <div class="camp-row">
+            <span class="camp-label">Canal de Ejecución</span>
+            <div class="camp-tags">
+              <span class="camp-tag">Puntos de Alto Tráfico</span>
+              <span class="camp-tag">Eventos Experienciales</span>
+              <span class="camp-tag">Canales Especializados</span>
+            </div>
+          </div>
+          <div class="camp-row">
+            <span class="camp-label">Mecánica Principal</span>
+            <p class="camp-value">Degustaciones premium en góndola, sampling experiencial con narrativa de marca, mercha de alta gama y captura de feedback de consumidor en tiempo real.</p>
+          </div>
+          <div class="camp-kpi-grid">
+            <div class="camp-kpi"><span class="camp-kpi-val">100%</span><span class="camp-kpi-lbl">Cobertura PDV</span></div>
+            <div class="camp-kpi"><span class="camp-kpi-val">2.8K</span><span class="camp-kpi-lbl">Degustaciones</span></div>
+            <div class="camp-kpi"><span class="camp-kpi-val">12.6K</span><span class="camp-kpi-lbl">Unidades Movidas</span></div>
+            <div class="camp-kpi"><span class="camp-kpi-val">93%</span><span class="camp-kpi-lbl">Conversión PDV</span></div>
+            <div class="camp-kpi"><span class="camp-kpi-val">68%</span><span class="camp-kpi-lbl">Tasa Re-Compra</span></div>
+            <div class="camp-kpi"><span class="camp-kpi-val">4.7/5</span><span class="camp-kpi-lbl">NPS Consumidor</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KIMBY -->
+      <div class="camp-card" data-campaign="kimby">
+        <div class="camp-header">
+          <div class="camp-row1">
+            <span class="camp-badge">Masivo · Canal Tradicional</span>
+            <div class="camp-status"><span class="status-dot"></span><span>En ejecución</span></div>
+          </div>
+          <h3 class="camp-name">KIMBY</h3>
+          <span class="camp-tagline">Embutidos · Marca Regional Cargill</span>
+        </div>
+        <div class="camp-body">
+          <div class="camp-row">
+            <span class="camp-label">Objetivo Estratégico</span>
+            <p class="camp-value">Maximizar la penetración de Kimby en tiendas de barrio, salsamentarias y plazas de mercado — el corazón del consumo masivo colombiano — manteniendo la consistencia de calidad regional Cargill.</p>
+          </div>
+          <div class="camp-row">
+            <span class="camp-label">Canal de Ejecución</span>
+            <div class="camp-tags">
+              <span class="camp-tag">Tiendas de Barrio</span>
+              <span class="camp-tag">Salsamentarias</span>
+              <span class="camp-tag">Plazas de Mercado</span>
+              <span class="camp-tag">Minimercados</span>
+            </div>
+          </div>
+          <div class="camp-row">
+            <span class="camp-label">Mecánica Principal</span>
+            <p class="camp-value">Cobertura territorial intensiva, mercha impulso, gestión de exhibición en punto de venta y control de rotación FIFO en cada PDV visitado.</p>
+          </div>
+          <div class="camp-kpi-grid">
+            <div class="camp-kpi"><span class="camp-kpi-val">100%</span><span class="camp-kpi-lbl">Cobertura PDV</span></div>
+            <div class="camp-kpi"><span class="camp-kpi-val">95</span><span class="camp-kpi-lbl">Impulsadores</span></div>
+            <div class="camp-kpi"><span class="camp-kpi-val">8.4K</span><span class="camp-kpi-lbl">Unidades Movidas</span></div>
+            <div class="camp-kpi"><span class="camp-kpi-val">87%</span><span class="camp-kpi-lbl">Conversión PDV</span></div>
+            <div class="camp-kpi"><span class="camp-kpi-val">2.1d</span><span class="camp-kpi-lbl">Rotación por SKU</span></div>
+            <div class="camp-kpi"><span class="camp-kpi-val">2.1d</span><span class="camp-kpi-lbl">Rotación SKU</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════ COBERTURA 100% ══════════════╗ -->
+<section id="cobertura">
+  <div class="container">
+    <div class="cov-headline">
+      <span class="section-tag">Resultado Consolidado</span>
+      <h2 class="section-title">Cobertura</h2>
+      <div class="cov-big">100<sup>%</sup></div>
+      <p>Mapeo total de PDV objetivo activados. Cada tienda, cada hipermercado y cada canal especializado intervenido bajo los protocolos de ejecución MFD — sin excepciones, sin agotados, sin huecos de operación.</p>
+    </div>
+
+    <div class="cov-grid">
+      <div class="cov-card">
+        <div class="cov-num">100%</div>
+        <div class="cov-lbl">Cobertura Total</div>
+        <div class="cov-sub">PDV activos vs. PDV objetivo</div>
+      </div>
+      <div class="cov-card">
+        <div class="cov-num">21K</div>
+        <div class="cov-lbl">Unidades Movidas</div>
+        <div class="cov-sub">Bucanero + Kimby consolidado</div>
+      </div>
+      <div class="cov-card">
+        <div class="cov-num">1.200+</div>
+        <div class="cov-lbl">Activaciones Documentadas</div>
+        <div class="cov-sub">Intervenciones registradas en campo</div>
+      </div>
+      <div class="cov-card">
+        <div class="cov-num">94%</div>
+        <div class="cov-lbl">Eficiencia Operativa</div>
+        <div class="cov-sub">Cumplimiento plan vs. ejecución</div>
+      </div>
+      <div class="cov-card">
+        <div class="cov-num">4.1K</div>
+        <div class="cov-lbl">Degustaciones</div>
+        <div class="cov-sub">Pruebas de producto realizadas</div>
+      </div>
+      <div class="cov-card">
+        <div class="cov-num">90%</div>
+        <div class="cov-lbl">Conversión</div>
+        <div class="cov-sub">Degustadores → Compradores</div>
+      </div>
+      <div class="cov-card">
+        <div class="cov-num">190+</div>
+        <div class="cov-lbl">Fuerza de Campo</div>
+        <div class="cov-sub">Impulsadores activos en territorio</div>
+      </div>
+      <div class="cov-card">
+        <div class="cov-num">32</div>
+        <div class="cov-lbl">Ciudades</div>
+        <div class="cov-sub">Cobertura geográfica nacional</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════ PROCESOS DE EJECUCIÓN ══════════════╗ -->
+<section id="procesos" class="bg-light">
+  <div class="container">
+    <span class="section-tag">Gestión Integral</span>
+    <h2 class="section-title">Procesos de <em>Ejecución</em></h2>
+    <div class="divider"></div>
+    <p class="section-lead">Estructura operativa de seis frentes que cubre desde la planificación territorial hasta la inteligencia de negocio post-venta. Cada frente con métricas, responsables, dashboards y entregables ya estandarizados.</p>
+
+    <div class="exec-grid">
+      <div class="exec-card">
+        <div class="exec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+        </div>
+        <h3 class="exec-title">Cobertura Territorial</h3>
+        <p class="exec-desc">Mapeo estratégico de PDV por zona geográfica, optimización de rutas y asignación de equipos según densidad de puntos y potencial de venta.</p>
+        <ul class="exec-list">
+          <li class="exec-item">Identificación y priorización de PDV</li>
+          <li class="exec-item">Georeferenciación completa</li>
+          <li class="exec-item">Ruteo optimizado por sector</li>
+          <li class="exec-item">Monitoreo GPS en tiempo real</li>
+        </ul>
+      </div>
+
+      <div class="exec-card">
+        <div class="exec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.5V7a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4 4 4 0 0 1 4 4v2.5"/><path d="M4 13h16v2a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><line x1="12" y1="13" x2="12" y2="19"/></svg>
+        </div>
+        <h3 class="exec-title">Degustaciones</h3>
+        <p class="exec-desc">Ejecución de pruebas de producto en PDV con protocolos estandarizados, captura de feedback del consumidor y conversión inmediata a venta.</p>
+        <ul class="exec-list">
+          <li class="exec-item">Protocolos de degustación premium</li>
+          <li class="exec-item">Control de insumos y stock</li>
+          <li class="exec-item">Captura de percepciones</li>
+          <li class="exec-item">Reportes de participación</li>
+        </ul>
+      </div>
+
+      <div class="exec-card">
+        <div class="exec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4l11 5V5L3 10z"/><path d="M14 8a3 3 0 0 1 0 8"/><line x1="18" y1="6" x2="20" y2="4"/><line x1="20" y1="12" x2="22" y2="12"/></svg>
+        </div>
+        <h3 class="exec-title">Mercha Impulso</h3>
+        <p class="exec-desc">Gestión de material promocional en punto de venta, rotación visual de marca y ejecución de mecánicas para impulsar la rotación de producto.</p>
+        <ul class="exec-list">
+          <li class="exec-item">Diseño y producción de POP</li>
+          <li class="exec-item">Instalación y control visual</li>
+          <li class="exec-item">Rotación de creatividades</li>
+          <li class="exec-item">Auditoría de presencia</li>
+        </ul>
+      </div>
+
+      <div class="exec-card">
+        <div class="exec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>
+        </div>
+        <h3 class="exec-title">Gestión Comercial</h3>
+        <p class="exec-desc">Análisis del movimiento de producto por SKU en campo, identificación de oportunidades de incremento y seguimiento de la rotación en cada punto intervenido.</p>
+        <ul class="exec-list">
+          <li class="exec-item">Seguimiento diario de movimiento</li>
+          <li class="exec-item">Análisis de SKU dominantes</li>
+          <li class="exec-item">Optimización de surtido</li>
+          <li class="exec-item">Reporte de activación por PDV</li>
+        </ul>
+      </div>
+
+      <div class="exec-card">
+        <div class="exec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9 5-9-5 9-5 9 5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M3 8l9 5 9-5"/></svg>
+        </div>
+        <h3 class="exec-title">Inventarios</h3>
+        <p class="exec-desc">Control de niveles de stock, prevención de agotados, rotación de producto según fecha y coordinación de reposiciones estratégicas.</p>
+        <ul class="exec-list">
+          <li class="exec-item">Conteo de inventarios</li>
+          <li class="exec-item">Prevención de agotados</li>
+          <li class="exec-item">FIFO y control de vencimientos</li>
+          <li class="exec-item">Reposiciones programadas</li>
+        </ul>
+      </div>
+
+      <div class="exec-card">
+        <div class="exec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><rect x="6" y="11" width="3" height="8"/><rect x="11" y="6" width="3" height="13"/><rect x="16" y="14" width="3" height="5"/></svg>
+        </div>
+        <h3 class="exec-title">Reportería BI</h3>
+        <p class="exec-desc">Consolidación de datos de campo, visualización de KPIs críticos, alertas de desviación y análisis predictivo para optimización continua.</p>
+        <ul class="exec-list">
+          <li class="exec-item">Dashboards en tiempo real</li>
+          <li class="exec-item">Informes diarios y semanales</li>
+          <li class="exec-item">Análisis de competencia</li>
+          <li class="exec-item">Recomendaciones accionables</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════ GALERÍA COVERFLOW ══════════════╗ -->
+<section id="galeria" class="bg-dark">
+  <div class="container">
+    <div class="gal-header">
+      <span class="section-tag">Documentación Visual</span>
+      <h2 class="section-title">Ejecuciones <em>en Campo</em></h2>
+      <div class="divider"></div>
+      <p class="section-lead">Cada imagen evidencia el nivel de ejecución, la cobertura alcanzada y el impacto real de las activaciones en puntos de venta estratégicos.</p>
+    </div>
+  </div>
+
+  <div class="gal-stage" id="galStage"></div>
+
+  <div class="gal-controls" id="galControls">
+    <button class="gal-btn" id="galPrev" aria-label="Imagen anterior">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="gal-counter"><span id="galCurr">1</span><span class="total"> / <span id="galTotal">1</span></span></div>
+    <button class="gal-btn" id="galNext" aria-label="Imagen siguiente">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
+  <div class="gal-dots" id="galDots" style="margin:14px auto 0"></div>
+</section>
+
+<!-- ╔══════════════ INDICADORES CLAVE BI ══════════════╗ -->
+<section id="indicadores" class="bg-white">
+  <div class="container">
+    <span class="section-tag">Inteligencia de Negocio</span>
+    <h2 class="section-title">Indicadores Clave de<br><em>Performance</em></h2>
+    <div class="divider"></div>
+
+    <div class="kpi-intro">
+      <p class="section-lead">Todo lo que ejecutamos se mide. Todo lo que medimos se reporta. Dashboards en tiempo real disponibles para los equipos de Trade y Marketing de Cargill, con evidencia de campo en cada indicador.</p>
+      <div class="quote-card">
+        <span class="qc-tag">Estándar Cargill</span>
+        <p>"Nos reinventamos continuamente poniendo a los clientes, los consumidores y los colaboradores al centro de nuestras decisiones."</p>
+        <span class="qc-author">— Xavier Vargas · Presidente Cargill Centroamérica y Colombia</span>
+      </div>
+    </div>
+
+    <div class="kpi-divider"><span>Cobertura & Volumen</span></div>
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-num">100%</div><div class="kpi-lbl">Cobertura PDV</div><div class="kpi-sub">Activos vs. objetivo</div></div>
+      <div class="kpi-card"><div class="kpi-num">324+</div><div class="kpi-lbl">PDV Intervenidos</div><div class="kpi-sub">Puntos con activación</div></div>
+      <div class="kpi-card"><div class="kpi-num">1.200+</div><div class="kpi-lbl">Activaciones</div><div class="kpi-sub">Documentadas en campo</div></div>
+      <div class="kpi-card"><div class="kpi-num">32</div><div class="kpi-lbl">Ciudades</div><div class="kpi-sub">Cobertura nacional</div></div>
+    </div>
+
+    <div class="kpi-divider"><span>Conversión & Rotación</span></div>
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-num">21K</div><div class="kpi-lbl">Unidades Movidas</div><div class="kpi-sub">Rotación consolidada del período</div></div>
+      <div class="kpi-card"><div class="kpi-num">1.200+</div><div class="kpi-lbl">Activaciones</div><div class="kpi-sub">Intervenciones documentadas</div></div>
+      <div class="kpi-card"><div class="kpi-num">90%</div><div class="kpi-lbl">Conversión</div><div class="kpi-sub">Prueba → Compra</div></div>
+      <div class="kpi-card"><div class="kpi-num">2.1d</div><div class="kpi-lbl">Rotación SKU</div><div class="kpi-sub">Días promedio por referencia</div></div>
+    </div>
+
+    <div class="kpi-divider"><span>Operación & Eficiencia</span></div>
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-num">190+</div><div class="kpi-lbl">Impulsadores</div><div class="kpi-sub">Fuerza de campo activa</div></div>
+      <div class="kpi-card"><div class="kpi-num">4.1K</div><div class="kpi-lbl">Degustaciones</div><div class="kpi-sub">Realizadas en período</div></div>
+      <div class="kpi-card"><div class="kpi-num">94%</div><div class="kpi-lbl">Eficiencia Op.</div><div class="kpi-sub">Plan vs. ejecución</div></div>
+      <div class="kpi-card"><div class="kpi-num">&lt;1d</div><div class="kpi-lbl">Cobertura Vacantes</div><div class="kpi-sub">Reemplazo en ciudades principales</div></div>
+    </div>
+
+    <div class="kpi-divider"><span>Marca & Consumidor</span></div>
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-num">4.7/5</div><div class="kpi-lbl">NPS Consumidor</div><div class="kpi-sub">Satisfacción post-degustación</div></div>
+      <div class="kpi-card"><div class="kpi-num">68%</div><div class="kpi-lbl">Re-Compra</div><div class="kpi-sub">Intención declarada</div></div>
+      <div class="kpi-card"><div class="kpi-num">12</div><div class="kpi-lbl">SKUs Activos</div><div class="kpi-sub">Promedio por PDV</div></div>
+      <div class="kpi-card"><div class="kpi-num">2.1d</div><div class="kpi-lbl">Rotación</div><div class="kpi-sub">Días promedio por SKU</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════ PROPUESTA CTA ══════════════╗ -->
+<section id="propuesta">
+  <div class="container">
+    <div class="prop-grid">
+      <div class="prop-text">
+        <span class="section-tag">El Siguiente Paso</span>
+        <h2 class="section-title">Activemos<br><em>Cargill 2026</em></h2>
+        <div class="divider" style="background:#fff"></div>
+        <p>Tienes el portafolio. Tienes la marca. Tienes el respaldo de Cargill global. <strong>Lo que falta es el partner de ejecución que lleve tus marcas a cada punto de contacto con el consumidor sin excepciones.</strong> Eso es exactamente lo que hacemos.</p>
+        <ul class="prop-checks">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Plan operativo Bucanero + Kimby en 15 días
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Equipo dedicado y entrenado en estándares Cargill
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Dashboards BI sincronizables a tus sistemas internos
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Garantía de cobertura 100% PDV objetivo
+          </li>
+        </ul>
+      </div>
+
+      <div class="prop-card">
+        <span class="prop-card-tag">Resumen Ejecutivo</span>
+        <h3 class="prop-card-title">Oferta Comercial<br>Cargill 2026</h3>
+        <div class="prop-card-row"><span class="pc-lbl">Marcas</span><span class="pc-val">Bucanero + Kimby</span></div>
+        <div class="prop-card-row"><span class="pc-lbl">Cobertura</span><span class="pc-val">100%</span></div>
+        <div class="prop-card-row"><span class="pc-lbl">Ciudades</span><span class="pc-val">32</span></div>
+        <div class="prop-card-row"><span class="pc-lbl">Impulsadores</span><span class="pc-val">190+</span></div>
+        <a href="#" class="prop-cta">Agendar Reunión Ejecutiva
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ╔══════════════ FOOTER ══════════════╗ -->
+<footer>
+  <div class="footer-brand">MFD <span>·</span> Marketing & Eventos</div>
+  <div class="footer-tag">Ejecución · Inteligencia · Resultados</div>
+  <p class="footer-text">Propuesta Exclusiva para Cargill Food Latinoamérica · 2026</p>
+  <p class="footer-text">Documento confidencial · Todas las métricas validadas con data de campo</p>
+</footer>
+
+<script>
+/* ════════════════════════════════════════════════════════
+   GALERÍA COVERFLOW — 44 imágenes reales desde Drive MFD
+   Para añadir fotos nuevas: agrega más IDs al array IMGS
+   (puedes obtenerlos del enlace de compartir de cada foto)
+════════════════════════════════════════════════════════ */
+const IMGS = [
+  {id:'1aculgwWpRYIyTiaay3D20vHRYF6uh411', lbl:'Activación PDV'},
+  {id:'1TiTBH6XtZ8oB0klzECLinlzEbncr8dzh', lbl:'Activación PDV'},
+  {id:'1VC2BW3R_jIjSd--QP4e5Xu96vNtM29zx', lbl:'Activación PDV'},
+  {id:'196tSeIIIvabGv8IhK4kANom24hGwJHo-', lbl:'Activación PDV'},
+  {id:'1xwnf6zsk7MRmjMQdMHZL58gOM1kTOSIm', lbl:'Activación PDV'},
+  {id:'1e-mPP5uj7fg_RzEGaHdoaWu4CEPFSoMl', lbl:'Activación PDV'},
+  {id:'1DGr7hdJLLnaQ1Hj2csehUU_udqNblUIW', lbl:'Activación PDV'},
+  {id:'1UlCAU4B0xIun5uzVcD7weQdzjQ4O_kdM', lbl:'Activación PDV'},
+  {id:'1FGPtTMHcIH-ajmdzFZaMjHEZuxSl7IUY', lbl:'Activación PDV'},
+  {id:'1Fk-Pt-e3T0mM0lmlXMWDi5hYaUevGmPU', lbl:'Activación PDV'},
+  {id:'1e5kb7YoWPKPfyiwrBUCeCfE7aZqVgnIg', lbl:'Activación PDV'},
+  {id:'1EjQZpc3MoYuehzcyQOzkS_4bQQIxym9W', lbl:'Activación PDV'},
+  {id:'1gTUj0GuivnL7vYkZCVwei98lkBzt3_bX', lbl:'Activación PDV'},
+  {id:'122D-xmUROpoFal4Qqs9w4XdHGcVdBRug', lbl:'Activación PDV'},
+  {id:'1Jrn7v531tox5a3ztLCiSDKJFr_H9XXg_', lbl:'Activación PDV'},
+  {id:'1RLmZ5HfvADeTe2x3p8ENlCfiniCOwFEm', lbl:'Activación PDV'},
+  {id:'1lzj5zVxRQZ43y3TQssK9u0Y8GuN4qj6u', lbl:'Activación PDV'},
+  {id:'1rmTxHhyb-41EVuBEuBftpH9PDBSJW1rE', lbl:'Activación PDV'},
+  {id:'181UbMB1iUo9alcjFrSBMh0MMOc_MnRtt', lbl:'Activación PDV'},
+  {id:'1ZrSUVimYJb3V0blAJ9YX20CVDIOy4vXd', lbl:'Activación PDV'},
+  {id:'1_aB5XH7tS6sG7RQM0xx3HhwTzaImctgJ', lbl:'Activación PDV'},
+  {id:'1rlzXDrgZ2CHBRNvxqqpPzad_sDxMunpO', lbl:'Activación PDV'},
+  {id:'1WaM4xN9a5iM6tDIwKH66mHi82uvuBmWm', lbl:'Activación PDV'},
+  {id:'1aYdS8lkx2Tfssdq2yJdM8j85LUa4bca6', lbl:'Activación PDV'},
+  {id:'1PKlyDHOsguYXVVQLXHlG9rOEEEEcPdJr', lbl:'Activación PDV'},
+  {id:'1BRtCfBVZtR3H2LNsbgMZJd_GEPysff-1', lbl:'Activación PDV'},
+  {id:'1-5m3rOIK7v34bF8w3cjH-4cjBz-pOWOx', lbl:'Activación PDV'},
+  {id:'1L1YkL_-CL-K0FZJE0hOpo2It4PtZDF6l', lbl:'Activación PDV'},
+  {id:'1zQ5bZRciBKR93C2mpWCKf5Bn6OC-0Ws_', lbl:'Activación PDV'},
+  {id:'1oX4gS-wfGmihLaiC7pDBFrZXALZMyjK1', lbl:'Activación PDV'},
+  {id:'1UoqleHffrClmRgQ7mdF5wiyBbJBds9MD', lbl:'Activación PDV'},
+  {id:'17lv68TRRB5XBck_HC2CFXe4c1qMhqjRN', lbl:'Activación PDV'},
+  {id:'1xIPDOBe4SOwhvmZ3Ctn64khx68XXu_Sm', lbl:'Activación PDV'},
+  {id:'1rIcxYBw6FwLnNBtRR1U6rjD-nSLjliK5', lbl:'Activación PDV'},
+  {id:'1Zsm4P4TLYaG8E54r0WlI9CtgJKPqbwZY', lbl:'Activación PDV'},
+  {id:'1BQq_KuNZeRlotHdqmEeIQskpE23yKHJJ', lbl:'Activación PDV'},
+  {id:'1zTMB8DPuw5IH4ZeVSfkT8oW6vwjFLWZq', lbl:'Activación PDV'},
+  {id:'141MW1V5M26sTcTs29bqIr9a6aXkruCQo', lbl:'Activación PDV'},
+  {id:'15eNOHvuhVH8vsWD3EgSsCK8fRddg3wI8', lbl:'Activación PDV'},
+  {id:'1WWzGmMEY2xR0qv2TwE_0L1NqsvCKKpDR', lbl:'Activación PDV'},
+  {id:'1DzvXcXdWXIf-Cxnegz-ojeOaX5Vc27Vx', lbl:'Activación PDV'},
+  {id:'11qMPwbzd__dsuyP5CDrggBkIIRAt8JtP', lbl:'Activación PDV'},
+  {id:'1IvmxLox9yqokXNAHRGY2ARnwKoMOzRrC', lbl:'Activación PDV'},
+  {id:'1KGvOlEbgHmXI8Cz5N2d0AtZqA2LC8I3d', lbl:'Activación PDV'},
+  {id:'12wBwDAp8WkkLNBCxQh4_e9w7u3k6QVkM', lbl:'Activación PDV'},
+  {id:'1Yf053UWUBc4cK4MrqzaTrr67YtkiH2Pq', lbl:'Activación PDV'},
+  {id:'1-sz38JvYTVHzRB0TnV8n32wZPtEbHA-s', lbl:'Activación PDV'},
+  {id:'1d9Z74-Oc_Sz_pq1gtsNSHYhfQHjZRivi', lbl:'Activación PDV'},
+  {id:'1CHfS0ITqnUBAwEM8FcxCfuExG_GkiTAU', lbl:'Activación PDV'},
+  {id:'1rB9BUuJOFJxBqMKL4zhrsjuReAzLaAm7', lbl:'Activación PDV'},
+  {id:'1JhZZxvyVmPD3_ERXt8QbZDybNdM7UaHN', lbl:'Activación PDV'},
+  {id:'13ODs2Df8JFEJB-aNqVopRk7724e-gJZY', lbl:'Activación PDV'},
+  {id:'1970nMYz3a8aYyvcsfVExlOVd0smnLOzt', lbl:'Activación PDV'},
+  {id:'1tvE6K8CymxH9SEMJIAqNOZl4twcSdCbg', lbl:'Activación PDV'},
+  {id:'19-r81V489MCWMYp7o00v3S0leFE2ob2q', lbl:'Activación PDV'},
+  {id:'1jBAjQ-El7ejITrF-V3s_LgbAQO-glaDG', lbl:'Activación PDV'},
+  {id:'1NEj8EnoVEVQiuojk39mff6AdJ_RZMnN-', lbl:'Activación PDV'},
+  {id:'1WvPo6A_KrmEpVlhWfzRRyhAvgRkOdcYB', lbl:'Activación PDV'},
+  {id:'1s98rSdpFDSnwTuGmRJlFmnevjcJaPduT', lbl:'Activación PDV'},
+  {id:'1tOUE7KuRM_LJZqpAE-BZqtjNenjoh9x5', lbl:'Activación PDV'},
+  {id:'1U_lKXoAs7yOUz43Y27rX-kvgsliJ5ee7', lbl:'Activación PDV'}
+];
+
+(function initCoverflow(){
+  const stage    = document.getElementById('galStage');
+  const dotsBox  = document.getElementById('galDots');
+  const currEl   = document.getElementById('galCurr');
+  const totalEl  = document.getElementById('galTotal');
+  const btnPrev  = document.getElementById('galPrev');
+  const btnNext  = document.getElementById('galNext');
+
+  // Construir slides
+  IMGS.forEach((img, i) => {
+    const slide = document.createElement('div');
+    slide.className = 'gal-slide hidden';
+    slide.dataset.index = i;
+    slide.innerHTML = `
+      <img src="https://lh3.googleusercontent.com/d/${img.id}"
+           alt="${img.lbl}"
+           loading="${i < 4 ? 'eager' : 'lazy'}"
+           decoding="async"
+           referrerpolicy="no-referrer"
+           onerror="this.parentElement.style.background='#1a1010'">
+      <div class="gal-slide-overlay">
+        <span class="gal-slide-label">${img.lbl}</span>
+      </div>`;
+    slide.addEventListener('click', () => { goTo(i); restart(); });
+    stage.appendChild(slide);
+
+    const dot = document.createElement('button');
+    dot.className = 'gal-dot';
+    dot.setAttribute('aria-label', 'Imagen ' + (i+1));
+    dot.addEventListener('click', () => { goTo(i); restart(); });
+    dotsBox.appendChild(dot);
+  });
+
+  totalEl.textContent = IMGS.length;
+  const slides = stage.querySelectorAll('.gal-slide');
+  const dots   = dotsBox.querySelectorAll('.gal-dot');
+  let current = 0, timer;
+
+  function render(){
+    const n = slides.length;
+    slides.forEach((s, i) => {
+      s.classList.remove('active','prev','next','far-prev','far-next','hidden');
+      if      (i === current)             s.classList.add('active');
+      else if (i === (current-1+n)%n)     s.classList.add('prev');
+      else if (i === (current+1)%n)       s.classList.add('next');
+      else if (i === (current-2+n)%n)     s.classList.add('far-prev');
+      else if (i === (current+2)%n)       s.classList.add('far-next');
+      else                                s.classList.add('hidden');
+    });
+    dots.forEach((d,i) => d.classList.toggle('active', i === current));
+    currEl.textContent = current + 1;
+  }
+
+  function goTo(n){ current = (n + slides.length) % slides.length; render(); }
+  function next(){ goTo(current + 1); }
+  function prev(){ goTo(current - 1); }
+  function start(){ timer = setInterval(next, 4500); }
+  function stop(){ clearInterval(timer); }
+  function restart(){ stop(); start(); }
+
+  btnNext.addEventListener('click', () => { next(); restart(); });
+  btnPrev.addEventListener('click', () => { prev(); restart(); });
+  stage.addEventListener('mouseenter', stop);
+  stage.addEventListener('mouseleave', start);
+
+  // Swipe táctil
+  let tx = 0;
+  stage.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, {passive:true});
+  stage.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - tx;
+    if(Math.abs(dx) > 50){ dx > 0 ? prev() : next(); restart(); }
+  }, {passive:true});
+
+  render();
+  start();
+})();
+
+/* PROGRESS BAR */
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  document.getElementById('pbar').style.width = scrolled + '%';
+});
+
+/* FADE-IN ON SCROLL */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.camp-card, .cov-card, .exec-card, .pq-card, .kpi-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(24px)';
+  el.style.transition = 'opacity .8s ease, transform .8s ease';
+  obs.observe(el);
+});
+</script>
+
+<!--
+═══════════════════════════════════════════════════════════════
+  GOOGLE APPS SCRIPT — Pega esto en script.google.com para
+  activar la galería coverflow dinámica desde tu Drive.
+═══════════════════════════════════════════════════════════════
+
+function doGet(e) {
+  try {
+    var folderId = (e && e.parameter && e.parameter.folder)
+                   ? e.parameter.folder
+                   : '1YoTXhwuSsozqK80WN3VTS9RYQe61MAGe';
+    var folder   = DriveApp.getFolderById(folderId);
+    var files    = folder.getFiles();
+    var images   = [];
+
+    while (files.hasNext()) {
+      var f = files.next();
+      var mime = f.getMimeType();
+      if (mime && mime.indexOf('image/') === 0) {
+        images.push({
+          id:   f.getId(),
+          name: f.getName(),
+          mime: mime
+        });
+      }
+    }
+    images.sort(function(a,b){ return a.name.localeCompare(b.name); });
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ ok: true, count: images.length, images: images }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ ok: false, error: err.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+Pasos rápidos:
+  1) script.google.com → Nuevo proyecto
+  2) Pega el código de arriba
+  3) Implementar → Nueva implementación
+  4) Tipo: Aplicación web · Ejecutar como: Yo · Acceso: Cualquier usuario
+  5) Copiar la URL /exec
+  6) Pegarla arriba en const DRIVE_API_URL
+  7) Carpeta de Drive debe estar pública "cualquiera con el enlace"
+
+Si añades fotos nuevas al folder, aparecen automáticamente al
+recargar el index. Cero mantenimiento.
+═══════════════════════════════════════════════════════════════
+-->
+
+</body>
+</html>
